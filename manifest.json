@@ -4,14 +4,13 @@
   "description": "Base Level Extension",
   "version": "1.0",
   "action": {
-    "default_popup": "hello.html",
-    "default_icon": "images/CRME.png"
+    "default_popup": "hello.html"
   },
   "permissions": ["contextMenus"],
   "background": {
     "scripts": ["background.js"]
   },
   "icons": {
-    "16": "images/MenuItem.png"
+    "16": "images/CRME.png"
   }
 }
