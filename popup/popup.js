@@ -1,3 +1,4 @@
+import openTab from "/helperFiles/createTab.js";
 document.addEventListener("DOMContentLoaded", () => {
   console.log("doc loaded");
 
@@ -37,24 +38,16 @@ const handleButtonClick = (event) => {
   let searchTerm = document.getElementById("input").value;
   switch (event.target.id) {
     case "ft-global":
-      chrome.tabs.create({
-        url: `https://financialtimes.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true`,
-      });
+      openTab(`https://financialtimes.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true`);
       break;
     case "ft-live":
-      chrome.tabs.create({
-        url: `https://ftlive.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true`,
-      });
+      openTab(`https://ftlive.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true`);
       break;
     case "ft-blink":
-      chrome.tabs.create({
-        url: `https://ft-blink.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true`,
-      });
+      openTab(`https://ft-blink.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true`);
       break;
     case "peoplefinder":
-      chrome.tabs.create({
-        url: `https://people-finder.in.ft.com/search?name=${searchTerm}`,
-      });
+      openTab(`https://people-finder.in.ft.com/search?name=${searchTerm}`);
       break;
     default:
       console.log("Invalid selection.");
