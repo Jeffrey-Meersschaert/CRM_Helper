@@ -1,0 +1,35 @@
+{
+    "contextMenuStripOrder": [
+        "FTGlobal-Search",
+        "FTLive-Search",
+        "FTBlink-Search",
+        "separator",
+        "People-Finder-Search"
+    ],
+    "Buttons": {
+        "FT Global": {
+            "title": "FT Global",
+            "url": "https://financialtimes.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true",
+            "id": "FTGlobal-Search",
+            "type": "normal"
+        },
+        "FT Live": {
+            "title": "FT Live",
+            "url": "https://ftlive.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true",
+            "id": "FTLive-Search",
+            "type": "normal"
+        },
+        "Blink": {
+            "title": "Blink",
+            "url": "https://ft-blink.my.salesforce.com/_ui/search/ui/UnifiedSearchResults?str=${searchTerm}&searchAll=true",
+            "id": "FTBlink-Search",
+            "type": "normal"
+        },
+        "People Finder": {
+            "title": "People Finder",
+            "url": "https://people-finder.in.ft.com/search?name=${searchTerm}",
+            "id": "People-Finder-Search",
+            "type": "normal"
+        }
+    }
+}
